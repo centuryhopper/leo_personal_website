@@ -41,4 +41,13 @@ https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-te
 
 https://www.youtube.com/watch?v=bMZ1WQg_UFM
 
+webdev simplified css positioning:
+https://www.youtube.com/watch?v=jx5jmI0UlXU&t=410s
+
+CSS Crash Course For Absolute Beginners:
+https://www.youtube.com/watch?v=yfoY53QXEnI
+
+Learn CSS Pseudo Elements In 8 Minutes:
+https://www.youtube.com/watch?v=OtBpgtqrjyo
+
 */
