@@ -1,12 +1,16 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router/router'
 import './assets/global.css'
 
 
 // TODO: finish up home page
 // TODO: set up vue-routers
 
-createApp(App).mount('#app')
+createApp(App)
+.use(router)
+.mount('#app')
+
 /*
 for reviewing concepts:
 https://github.com/Code-Pop/Intro-to-Vue-3
@@ -35,9 +39,7 @@ https://www.youtube.com/watch?v=dNYCrO8w4kg
 set image to size of div:
 https://stackoverflow.com/questions/19192892/css-how-can-i-set-image-size-relative-to-parent-height
 
-
 https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/
-
 
 https://www.youtube.com/watch?v=bMZ1WQg_UFM
 
@@ -49,5 +51,11 @@ https://www.youtube.com/watch?v=yfoY53QXEnI
 
 Learn CSS Pseudo Elements In 8 Minutes:
 https://www.youtube.com/watch?v=OtBpgtqrjyo
+
+vue router code example:
+https://codepen.io/patrickodacre/pen/jwXJOE
+
+get component name
+https://forum.vuejs.org/t/how-to-get-component-name/6112/3
 
 */

@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+*{
+	margin:0;
+	padding:0;
+}
+
 body {
     font-family: 'Open Sans';
     /* background: #ece6d9; */
     background: #000000;
+    text-align:center;
 }
 
+/* very important to have so that the html elements don't appear on the page as if they were outside of the body tags */
 html, body {
     width: 100%;
     height: 100%;
