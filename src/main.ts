@@ -2,14 +2,13 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router/router'
 import './assets/global.css'
+import "bootstrap/dist/css/bootstrap.css"
 
-
-// TODO: finish up home page
-// TODO: set up vue-routers
 
 createApp(App)
 .use(router)
 .mount('#app')
+
 
 /*
 for reviewing concepts:
@@ -58,4 +57,8 @@ https://codepen.io/patrickodacre/pen/jwXJOE
 get component name
 https://forum.vuejs.org/t/how-to-get-component-name/6112/3
 
+
+bootstrap 5:
+https://getbootstrap.com/docs/5.2/getting-started/introduction/#quick-start
+https://www.youtube.com/watch?v=oZ9zlS5V5WU&t=93s
 */

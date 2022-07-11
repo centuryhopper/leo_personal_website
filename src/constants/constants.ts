@@ -1,3 +1,8 @@
+import { BlogCard   } from '../classes/classes'
+import dayjs from 'dayjs'
+import isLeapYear from 'dayjs/plugin/isLeapYear'
+
+dayjs.extend(isLeapYear)
 
 const languages = [
     'C#. I learned this language when I was learning to use the Unity Game engine to make video games. The language was easy to pick up because it was syntactically similar to Java, which I learned in high school and college.',
@@ -8,4 +13,12 @@ const languages = [
     'C, Java, Haskell, Erlang. These are mainly languages that I have used for university classes and have built me a solid foundation for learning other languages or frameworks in the software field.',
 ]
 
-export {languages,}
+const blogCards = [
+    new BlogCard('My New Site', dayjs('2022-04-22').format("YYYY-MM-DD"), dayjs('2022-04-22').format('MMMM DD, YYYY'), 'Hello there! Welcome to my website!'),
+    // talk about experiences at lake cherokee in orlando fl
+    new BlogCard('Independence Day Fireworks by the Lake', dayjs('2022-07-04').format("YYYY-MM-DD"), dayjs('2022-07-04').format('MMMM DD, YYYY'), 'Fireworks look even better by the lake!'),
+]
+
+
+export {languages, blogCards}
+

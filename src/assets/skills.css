@@ -1,7 +1,7 @@
 
-hr {
+/* hr {
     margin: 10px 0 10px 0;
-}
+} */
 
 ul li:not(:last-child) {
     margin-bottom: 10px;

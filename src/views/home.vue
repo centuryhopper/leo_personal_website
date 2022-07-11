@@ -1,6 +1,6 @@
 <template>
   <div id="profileparent">
-    <img id="profilechild" src="../../public/images/Leo_Magic_Kingdom.jpg" alt="Avatar">
+    <img id="profilechild" src="https://raw.githubusercontent.com/leozhang1/leo_personal_website/master/public/images/Leo_Magic_Kingdom.jpg" alt="Avatar">
     <p>A picture of me at Disney's Magic Kingdom.</p>
   </div>
 
@@ -11,8 +11,6 @@
     <button id="resumeButton" @click="resumeAction">resume</button>
     <button id="greetButton" @click="sayHiAction">Say Hi!</button>
   </div>
-
-
 </template>
 
 
