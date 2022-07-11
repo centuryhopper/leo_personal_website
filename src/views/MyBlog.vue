@@ -1,5 +1,7 @@
+
 <template>
-    <p>blog page</p>
+    <h2>All Blogs</h2>
+    <hr/>
 </template>
 
 <script lang="ts">
@@ -12,3 +14,5 @@ export default defineComponent({
     },
 })
 </script>
+
+

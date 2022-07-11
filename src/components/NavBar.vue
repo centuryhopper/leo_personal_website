@@ -1,17 +1,16 @@
 <template>
-        <!-- To stops the page from jumping when a link is clicked
-                we use the "prevent" modifier (short for preventDefault). -->
-        <div id="navParent">
-            <nav :class="active" @click.prevent>
-            <router-link class="router_link home" @click="makeActive('home')" to="/">Home</router-link>
-            <router-link class="router_link aboutMe" @click="makeActive('aboutMe')" to="/aboutMe">About Me</router-link>
-            <router-link class="router_link skills" @click="makeActive('skills')" to="/skills">Skills</router-link>
-            <router-link class="router_link games" @click="makeActive('games')" to="/games">Games</router-link>
-            <router-link class="router_link contactMe" @click="makeActive('contactMe')" to="/contactMe">Contact Me</router-link>
-            <router-link class="router_link blog" @click="makeActive('blog')" to="/blog">Blog</router-link>
+    <!-- To stops the page from jumping when a link is clicked
+            we use the "prevent" modifier (short for preventDefault). -->
+    <div id="navParent">
+        <nav :class="active" @click.prevent>
+        <router-link class="router_link home" @click="makeActive('home')" to="/">Home</router-link>
+        <router-link class="router_link aboutMe" @click="makeActive('aboutMe')" to="/aboutMe">About Me</router-link>
+        <router-link class="router_link skills" @click="makeActive('skills')" to="/skills">Skills</router-link>
+        <router-link class="router_link games" @click="makeActive('games')" to="/games">Games</router-link>
+        <router-link class="router_link contactMe" @click="makeActive('contactMe')" to="/contactMe">Contact Me</router-link>
+        <router-link class="router_link blog" @click="makeActive('blog')" to="/blog">Blog</router-link>
         </nav>
-
-        </div>
+    </div>
 </template>
 
 
@@ -25,7 +24,7 @@ export default defineComponent({
     name:'navbar-component',
     setup()
     {
-        const active = ref('home')
+        const active = ref('')
 
         return {active}
     },
@@ -36,6 +35,12 @@ export default defineComponent({
             this.active = item
             console.log(this.active)
         }
+    },
+    mounted()
+    {
+        const currentRoute = this.$router.currentRoute.value.fullPath
+        // console.log(this.$router.currentRoute.value)
+        this.active = (currentRoute === '/') ? 'home' : this.$router.currentRoute.value.fullPath.slice(1)
     },
 })
 </script>

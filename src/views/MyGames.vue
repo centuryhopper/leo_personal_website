@@ -1,5 +1,5 @@
 <template>
-    <p>games page</p>
+    <p>Content coming soon!</p>
 </template>
 
 <script lang="ts">
