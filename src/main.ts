@@ -12,7 +12,6 @@ import piniaPersist from 'pinia-plugin-persist'
 const pinia = createPinia()
 pinia.use(piniaPersist)
 
-
 createApp(App)
 .use(router)
 .use(pinia)
@@ -22,10 +21,13 @@ createApp(App)
 
 /*
 TODO: style and position the elements on each page
+TODO: add a timeout for sending messages to me
 
 
 for reviewing concepts:
 https://github.com/Code-Pop/Intro-to-Vue-3
+
+
 lessons:
 Lesson 3 - Attribute Binding
 Lesson 4 - Conditional Rendering
@@ -36,8 +38,6 @@ Lesson 8 - Computed Properties
 Lesson 9 - Components & Props
 Lesson 10 - Communicating Events
 Lesson 11 - Forms & v-model
-
-
 
 
 circular images:
@@ -70,8 +70,9 @@ https://codepen.io/patrickodacre/pen/jwXJOE
 get component name
 https://forum.vuejs.org/t/how-to-get-component-name/6112/3
 
-
 bootstrap 5:
 https://getbootstrap.com/docs/5.2/getting-started/introduction/#quick-start
 https://www.youtube.com/watch?v=oZ9zlS5V5WU&t=93s
+
+
 */
