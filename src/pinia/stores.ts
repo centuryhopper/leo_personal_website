@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 
 const useStore = defineStore('state', {
     state: () => {
-      return { activeRoute: '' }
+      return { activeRoute: 'home' }
     },
     actions: {
       setRoute(newRoute: string) {

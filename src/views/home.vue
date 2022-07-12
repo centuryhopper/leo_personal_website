@@ -42,9 +42,8 @@ export default defineComponent({
     },
 
   },
-  mounted() {
-    console.log(process.env.VUE_APP_LIVE_ENDPOINT)
-  },
+  // mounted() {
+  // },
 
 });
 </script>
