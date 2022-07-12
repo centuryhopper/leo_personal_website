@@ -19,15 +19,15 @@ export default defineComponent({
     FooterComp,
   },
   // composition api
-  setup()
-  {
+  // setup()
+  // {
 
-    return {  }
-  },
-  methods:
-  {
+  //   return {  }
+  // },
+  // methods:
+  // {
 
-  },
+  // },
   // mounted(){
   //   console.log(`mounted ${this.$options.name}`)
   // },

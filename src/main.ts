@@ -74,5 +74,6 @@ bootstrap 5:
 https://getbootstrap.com/docs/5.2/getting-started/introduction/#quick-start
 https://www.youtube.com/watch?v=oZ9zlS5V5WU&t=93s
 
-
+dotenv in vuejs
+https://stackoverflow.com/questions/50715302/how-to-use-dotenv-with-vue-js
 */

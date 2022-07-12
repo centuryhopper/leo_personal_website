@@ -25,8 +25,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent,ref } from 'vue'
 // in Vue 3
+import { defineComponent,ref } from 'vue'
 import axios from 'axios'
 
 export default defineComponent({
@@ -49,7 +49,7 @@ export default defineComponent({
             // console.log(`data: ${JSON.stringify(this.postData)}`)
             let res = null
             try {
-                res = await axios.post('https://nodejs-portfolio-contacts.herokuapp.com/portfolio_contacts/', this.postData)
+                res = await axios.post(process.env.VUE_APP_LIVE_ENDPOINT, this.postData)
             } catch (error: any) {
                 console.error(error.message)
             }
