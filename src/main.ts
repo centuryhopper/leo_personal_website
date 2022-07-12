@@ -76,4 +76,18 @@ https://www.youtube.com/watch?v=oZ9zlS5V5WU&t=93s
 
 dotenv in vuejs
 https://stackoverflow.com/questions/50715302/how-to-use-dotenv-with-vue-js
+
+https://getbootstrap.com/docs/4.3/utilities/borders/
+
+https://stackoverflow.com/questions/9808253/how-to-set-shadow-for-round-imagecss
+
+https://mdbootstrap.com/docs/standard/navigation/footer/
+
+https://www.w3schools.com/bootstrap5/bootstrap_images.php
+
+https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap#:~:text=Keep%20the%20footer%20at%20the%20bottom%20by%20using%20Bootstrap%205&text=Make%20sure%20that%20you%20are,element%20to%20wrap%20the%20footer.
+
+https://getbootstrap.com/docs/5.0/utilities/text/#text-wrapping-and-overflow
+
+https://codepen.io/rasaf-ibrahim/pen/gOmzPZe
 */

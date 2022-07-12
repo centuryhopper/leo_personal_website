@@ -1,16 +1,26 @@
 <template>
-  <div id="profileparent">
-    <img id="profilechild" src="https://raw.githubusercontent.com/leozhang1/leo_personal_website/master/public/images/Leo_Magic_Kingdom.jpg" alt="Avatar">
-    <p>A picture of me at Disney's Magic Kingdom.</p>
-  </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-7">
+          <img id="profilechild" class="img-fluid w-50 h-50 ms-5 rounded-circle" src="https://raw.githubusercontent.com/leozhang1/leo_personal_website/master/public/images/Leo_Magic_Kingdom.jpg" alt="Avatar">
+          <p>A picture of me at Disney's Magic Kingdom.</p>
+        </div>
+        <div class="col-5">
+          <p id="introchild" class="text-wrap">
+            Hello there!
+            My name is Leo Zhang.
+            I am currently seeking a job/internship for
+            anything related to computer programming and
+            problem solving.
+          </p>
+          <button id="resumeButton" class="btn btn-primary rounded-pill" data-mdb-ripple-color="dark" @click="resumeAction">resume</button>
+          &nbsp;
+          <button id="greetButton" class="btn btn-outline-primary rounded-pill"  data-mdb-ripple-color="dark" @click="sayHiAction">Say Hi!</button>
+        </div>
+      </div>
+    </div>
 
-  <div id="introparent">
-    <h2 id="introchild">
-      Hello there! <br/>  My name is Leo Zhang. I am currently seeking a job/internship for anything related to computer programming and problem solving.
-    </h2>
-    <button id="resumeButton" @click="resumeAction">resume</button>
-    <button id="greetButton" @click="sayHiAction">Say Hi!</button>
-  </div>
+
 </template>
 
 

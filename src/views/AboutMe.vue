@@ -1,6 +1,9 @@
 <template>
-    <pre>
-        Greetings! I am currently a Computer Science graduate student attending the
+    <div class="text-center">
+        <h2>Greetings!</h2>
+        <hr/>
+        <p class="aboutMeDesc">
+        I am currently a Computer Science graduate student attending the
         University of Central Florida. My productive spare-time hobbies include
         full-stack development on web, mobile, and game applications. I am in
         graduate school because of an interest in AI. I am fascinated by how AI will
@@ -11,7 +14,8 @@
         this experience, I have gained the skills needed incorporate such
         applications & concepts into my personal projects, and leverage such skills
         to contribute in the software idustry.
-    </pre>
+        </p>
+    </div>
 </template>
 
 <script lang="ts">

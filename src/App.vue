@@ -1,7 +1,11 @@
 <template>
-    <NavBar/>
-    <!-- component will render here in the router view -->
-    <router-view/>
+    <div class="min-vh-100 d-flex flex-column justify-content-between">
+      <div id="main">
+        <NavBar/>
+        <!-- component will render here in the router view -->
+        <router-view/>
+      </div>
+    </div>
     <FooterComp/>
 </template>
 
