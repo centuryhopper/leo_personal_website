@@ -3,14 +3,27 @@ import App from './App.vue'
 import router from './router/router'
 import './assets/global.css'
 import "bootstrap/dist/css/bootstrap.css"
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+import {createPinia} from 'pinia'
+import piniaPersist from 'pinia-plugin-persist'
+
+
+const pinia = createPinia()
+pinia.use(piniaPersist)
 
 
 createApp(App)
 .use(router)
+.use(pinia)
+.use(VueAxios, axios)
 .mount('#app')
 
 
 /*
+TODO: style and position the elements on each page
+
+
 for reviewing concepts:
 https://github.com/Code-Pop/Intro-to-Vue-3
 lessons:

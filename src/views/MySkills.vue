@@ -23,8 +23,5 @@ export default defineComponent({
         const programmingLanguages = ref(languages)
         return {programmingLanguages}
     },
-    mounted() {
-        // console.log(languages)
-    },
 })
 </script>

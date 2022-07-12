@@ -13,12 +13,12 @@ import {createRouter, createWebHashHistory} from "vue-router"
 // Each route should map to a component.
 // We'll talk about nested routes later.
 const routes = [
-    { path: '/', component: Home },
-    { path: '/aboutMe', component: AboutMe },
-    { path: '/skills', component: Skills },
-    { path: '/games', component: Games },
-    { path: '/contactMe', component: ContactMe },
-    { path: '/blog', component: Blog },
+    { path: '/', name: 'home', component: Home, },
+    { path: '/aboutMe', name: 'aboutMe', component: AboutMe, },
+    { path: '/skills', name: 'skills', component: Skills, },
+    { path: '/games', name: 'games', component: Games, },
+    { path: '/contactMe', name: 'contactMe', component: ContactMe, },
+    { path: '/blog', name: 'blog', component: Blog, },
   ]
 
   // 3. Create the router instance and pass the `routes` option
@@ -30,4 +30,4 @@ const router = createRouter({
     routes, // short for `routes: routes`
   })
 
-  export default router
+export default router

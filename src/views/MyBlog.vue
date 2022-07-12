@@ -1,7 +1,7 @@
 <template>
     <h2>All Blogs</h2>
     <hr/>
-    <button type="button" class="btn btn-dark" @click="flipOrdering">Sort by {{isNewest ? "Newest" : "Oldest"}}</button>
+    <button type="button" class="btn btn-dark" @click="flipOrdering">Sorted by {{isNewest ? "Newest" : "Oldest"}}</button>
     <div class="d-grid gap-3">
         <div class="card" style="width: 18rem;" v-for="(b, idx) in bc" :key="idx">
             <div class="card-body">

@@ -1,8 +1,9 @@
 import { BlogCard   } from '../classes/classes'
 import dayjs from 'dayjs'
 import isLeapYear from 'dayjs/plugin/isLeapYear'
-
 dayjs.extend(isLeapYear)
+
+
 
 const languages = [
     'C#. I learned this language when I was learning to use the Unity Game engine to make video games. The language was easy to pick up because it was syntactically similar to Java, which I learned in high school and college.',
@@ -20,5 +21,5 @@ const blogCards = [
 ]
 
 
-export {languages, blogCards}
+export {languages, blogCards, }
 

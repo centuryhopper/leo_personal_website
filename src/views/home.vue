@@ -43,9 +43,5 @@ export default defineComponent({
 
   },
 
-  mounted()
-  {
-    console.log(`mounted ${this.$options.name}`)
-  }
 });
 </script>
