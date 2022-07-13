@@ -2,7 +2,7 @@
     <div class="text-center">
         <h2>Greetings!</h2>
         <hr/>
-        <p class="aboutMeDesc">
+        <p>
         I am currently a Computer Science graduate student attending the
         University of Central Florida. My productive spare-time hobbies include
         full-stack development on web, mobile, and game applications. I am in
@@ -15,6 +15,7 @@
         applications & concepts into my personal projects, and leverage such skills
         to contribute in the software idustry.
         </p>
+
     </div>
 </template>
 
