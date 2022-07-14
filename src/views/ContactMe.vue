@@ -1,26 +1,33 @@
 <template>
-    <p>
+    <div class="text-center">
+        <p>
         I am excited to meet and work with you! We progress better together so please don't hesitate to contact me using the form below.
-    </p>
+        </p>
+    </div>
     <form @submit="post" method="POST">
-        <div class="mb-3">
-            <label for="input1" class="form-label">Name</label>
-            <input type="text" class="form-control" id="input1" v-model="postData.name" placeholder="Name" required>
-        </div>
-        <div class="mb-3">
+        <div class="row mb-3 w-75 mx-auto">
+            <div class="col-6">
+                <label for="input1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="input1" v-model="postData.name" placeholder="Name" required>
+            </div>
+            <div class="col-6">
             <label for="input2" class="form-label">Email</label>
-            <input type="email" class="form-control" id="input2" aria-describedby="emailHelp" v-model="postData.email" placeholder="Email" required>
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <input type="email" class="form-control" id="input2" aria-describedby="emailHelp" v-model="postData.email" placeholder="Email" required>
+                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
         </div>
-        <div class="mb-3">
+        <div class="mb-3 w-75 mx-auto">
             <label for="input3" class="form-label">Subject</label>
             <input type="text" class="form-control" id="input3" v-model="postData.subject" placeholder="Subject" required>
         </div>
-        <div class="form-outline">
-            <textarea class="form-control" id="textAreaContact" rows="7" v-model="postData.message" placeholder="Message" required></textarea>
+        <div class="form-outline mb-5 w-75 mx-auto">
             <label class="form-label" for="textAreaContact">Message</label>
+            <textarea class="form-control" id="textAreaContact" rows="7" v-model="postData.message" placeholder="Message" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="w-75 mx-auto">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
     </form>
 </template>
 

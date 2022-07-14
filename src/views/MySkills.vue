@@ -16,12 +16,17 @@
     <ul>
         <li v-for="(pl, idx) in pls" :key="idx"> {{pl}}</li>
     </ul>
+    <h2 class="skillsSubHeader">The Linux Distribution That I Use & The Tools That I Frequently Work With</h2>
+    <hr/>
+    <ul>
+        <li v-for="(lt, idx) in lts" :key="idx"> {{lt}}</li>
+    </ul>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
 import '../assets/skills.css'
-import {languages, techs, pythonLibraries} from '../constants/constants'
+import {languages, techs, pythonLibraries, linuxTools} from '../constants/constants'
 
 export default defineComponent({
     name:'skills-component',
@@ -29,9 +34,10 @@ export default defineComponent({
         const programmingLanguages = ref(languages)
         const ts = ref(techs)
         const pls = ref(pythonLibraries)
+        const lts = ref(linuxTools)
 
 
-        return {programmingLanguages, ts, pls,}
+        return { programmingLanguages, ts, pls, lts, }
     },
 })
 </script>

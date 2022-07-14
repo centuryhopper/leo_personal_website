@@ -1,9 +1,13 @@
 <template>
-    <h2>All Blogs</h2>
+    <div class="text-center">
+        <h2>All Blogs</h2>
+    </div>
     <hr/>
-    <button type="button" class="btn btn-dark" @click="flipOrdering">Sorted by {{isNewest ? "Newest" : "Oldest"}}</button>
-    <div class="d-grid gap-3">
-        <div class="card" style="width: 18rem;" v-for="(b, idx) in bc" :key="idx">
+    <div class="text-center">
+        <button type="button" class="btn btn-dark" @click="flipOrdering">Sorted by {{isNewest ? "Newest" : "Oldest"}}</button>
+    </div>
+    <div class="">
+        <div class="card mx-auto mt-3 w-75" v-for="(b, idx) in bc" :key="idx">
             <div class="card-body">
                 <a href="#" class="card-link">{{b.title}}</a>
                 <h5 class="card-title">{{b.date}}</h5>

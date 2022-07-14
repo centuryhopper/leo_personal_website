@@ -31,6 +31,7 @@ const pythonLibraries = [
 const linuxTools = [
     'Endeavour OS - This is the linux distro I finally settled on after hopping around several other distros. It is arch-based, so it has pacman as the package manager, which is in my opinion, the most intuitive one out of all the other linux distros such as apt and dnf.',
     'Vim - This is my favorite text editor that can be used via the terminal and is very handy for making edits to files on my computer.',
+    'KDE - This is the desktop environment that I use for my linux operating system. It is by far one of the most customizable desktop environments I have ever seen for all the linux distributions out there, which gives me plenty of room and freedom to customize my workspace however I choose.'
 ]
 
 const blogCards = [
@@ -40,5 +41,5 @@ const blogCards = [
 ]
 
 
-export { languages, techs, blogCards, pythonLibraries }
+export { languages, techs, blogCards, pythonLibraries, linuxTools, }
 

@@ -1,5 +1,8 @@
 <template>
-    <p>Content coming soon!</p>
+    <div class="text-center">
+        <p>Content coming soon!</p>
+    </div>
+
 </template>
 
 <script lang="ts">
