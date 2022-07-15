@@ -7,7 +7,7 @@ const useStore = defineStore('state', {
     },
     actions: {
       setRoute(newRoute: string) {
-        this.activeRoute = newRoute
+        this.activeRoute = newRoute === '/' ? 'home' : newRoute
       },
     },
      persist: {

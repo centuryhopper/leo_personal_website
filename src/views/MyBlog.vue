@@ -26,7 +26,7 @@ export default defineComponent({
     setup() {
         const bc = ref(blogCards)
         const isNewest = ref(false)
-        return {bc, isNewest, }
+        return { bc, isNewest, }
     },
     methods: {
         flipOrdering()
@@ -35,9 +35,6 @@ export default defineComponent({
             this.bc.reverse()
             this.isNewest = !this.isNewest
         },
-    },
-    mounted() {
-        console.log(this.bc)
     },
 })
 </script>

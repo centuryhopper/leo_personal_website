@@ -32,10 +32,14 @@ export default defineComponent({
   // {
 
   // },
-  // mounted(){
-  //   console.log(`mounted ${this.$options.name}`)
-  // },
 
 });
 </script>
 
+<!-- <style>
+
+.nav-bar-active-link {
+    background-color:#e35885;
+}
+
+</style> -->

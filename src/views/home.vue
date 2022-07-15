@@ -29,9 +29,6 @@ import '../assets/footer.css'
 
 export default defineComponent({
   name: 'home-component',
-  // props: {
-
-  // },
   components:
   {
   },
@@ -50,8 +47,6 @@ export default defineComponent({
     // },
 
   },
-  // mounted() {
-  // },
 
 });
 </script>
