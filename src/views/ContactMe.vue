@@ -11,9 +11,9 @@
                 <input type="text" class="form-control" id="input1" v-model="postData.name" placeholder="Name" required>
             </div>
             <div class="col-6">
-            <label for="input2" class="form-label">Email</label>
-                <input type="email" class="form-control" id="input2" aria-describedby="emailHelp" v-model="postData.email" placeholder="Email" required>
-                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                <label for="input2" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="input2" aria-describedby="emailHelp" v-model="postData.email" placeholder="Email" required>
+                    <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
         </div>
         <div class="mb-3 w-75 mx-auto">
@@ -27,18 +27,32 @@
         <div class="w-75 mx-auto">
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
-
     </form>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div :class="toastHandler">
+            <div class="toast-header">
+                <strong class="me-auto">ERROR</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                <p>You already submitted. Please wait a moment before trying again.</p>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script lang="ts">
-// in Vue 3
 import { defineComponent,ref } from 'vue'
 import axios from 'axios'
 
+let didSubmit = false, alreadyShowingTimeout = false
+const TIME_IN_SECONDS = 10
+
 export default defineComponent({
     name:'contact-me-component',
-    setup() {
+    setup()
+    {
         const postData = ref({
             name: '',
             email: '',
@@ -46,21 +60,59 @@ export default defineComponent({
             message: '',
         })
 
-        return { postData, }
+        const toastHandler = ref('toast hide')
+
+        return { postData, toastHandler, }
     },
     methods:
     {
-        async post(event: Event)
+        async post(event: Event) : Promise<void>
         {
             event.preventDefault()
-            // console.log(`data: ${JSON.stringify(this.postData)}`)
-            let res = null
-            try {
-                res = await axios.post(process.env.VUE_APP_LIVE_ENDPOINT, this.postData)
-            } catch (error: any) {
-                console.error(error.message)
+            if (this.canPost())
+            {
+                // console.log(`data: ${JSON.stringify(this.postData)}`)
+                let res = null
+                try {
+                    res = await axios.post(process.env.VUE_APP_LIVE_ENDPOINT, this.postData)
+                } catch (error: any) {
+                    console.error(error.message)
+                }
+                console.log(res?.data)
             }
-            console.log(res?.data)
+
+        },
+
+        canPost() : boolean
+        {
+            if (didSubmit)
+            {
+                // show toast
+                this.toastHandler = 'toast show'
+
+                // don't restart timer if already started
+                if (alreadyShowingTimeout)
+                {
+                    return false
+                }
+
+                alreadyShowingTimeout = true
+
+                setTimeout(
+                    () => {
+                        // allow submitting again
+                        alreadyShowingTimeout = false
+                        didSubmit = false
+                        this.toastHandler = 'toast hide'
+                }, TIME_IN_SECONDS * 1000)
+
+                return false
+            }
+            else
+            {
+                didSubmit = true
+                return true
+            }
         },
     },
 })

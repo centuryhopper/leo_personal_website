@@ -22,7 +22,6 @@ createApp(App)
 /*
 TODO: style and position the elements on each page
 TODO: add a timeout for sending messages to me
-TODO: add a stack to keep track of user going back a page
 TODO: create component that will provide the view for you blog details
 
 
