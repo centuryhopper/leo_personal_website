@@ -2,7 +2,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-7 text-center">
-          <img id="profilechild" class="img-fluid w-50 h-50 ms-5 rounded-circle" src="https://raw.githubusercontent.com/leozhang1/leo_personal_website/master/public/images/Leo_Magic_Kingdom.jpg" alt="Avatar">
+          <img id="profilechild" class="img-fluid w-50 h-25 ms-5 rounded-circle" src="https://raw.githubusercontent.com/leozhang1/leo_personal_website/master/public/images/Leo_Magic_Kingdom.jpg" alt="Avatar">
           <p>A picture of me at Disney's Magic Kingdom.</p>
         </div>
         <div class="col-5 text-center">
