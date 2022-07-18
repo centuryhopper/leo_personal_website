@@ -2,9 +2,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-7 text-center">
-          <!-- Leo_Magic_Kingdom.jpg -->
-          <!-- shutterstock-1099751423.jpg -->
-          <img id="profilechild" class="img-fluid w-50 h-25 ms-5 rounded-circle" src="https://raw.githubusercontent.com/leozhang1/leo_personal_website/master/public/images/Leo_Magic_Kingdom.jpg" alt="Avatar">
+          <img id="profilechild" class="w-50 rounded-circle" src="https://raw.githubusercontent.com/leozhang1/leo_personal_website/master/public/images/Leo_Magic_Kingdom.jpg" alt="Avatar">
           <p>A picture of me at Disney's Magic Kingdom.</p>
         </div>
         <div class="col-5 text-center">
@@ -29,6 +27,7 @@ import { defineComponent, ref } from 'vue'
 import '../assets/intro.css'
 import '../assets/footer.css'
 
+
 export default defineComponent({
   name: 'home-component',
   components:
@@ -52,3 +51,28 @@ export default defineComponent({
 
 });
 </script>
+
+<style>
+
+img {
+  display: block;
+  max-width: 400px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* .img-cropped {
+  object-fit: cover;
+  object-position: center center;
+  max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+} */
+
+
+
+</style>
