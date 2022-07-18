@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
+import { defineComponent, } from 'vue';
 import NavBar from './components/NavBar.vue';
 import FooterComp from './components/FooterComp.vue'
 

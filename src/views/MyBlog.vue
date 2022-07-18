@@ -9,7 +9,7 @@
     <div class="">
         <div class="card mx-auto mt-3 w-75" v-for="(b, idx) in bc" :key="idx">
             <div class="card-body">
-                <a href="#" class="card-link">{{b.title}}</a>
+                <router-link class="card-link" :to="{name: 'blogDetails', params: {title: b.title, blogDetailsHTML: b.blogDetailsHTML}}">{{b.title}}</router-link>
                 <h5 class="card-title">{{b.date}}</h5>
                 <p class="card-text">{{b.previewDesc}}</p>
             </div>

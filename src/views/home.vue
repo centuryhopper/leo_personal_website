@@ -1,24 +1,24 @@
 <template>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-7 text-center">
-          <img id="profilechild" class="w-50 rounded-circle" src="https://raw.githubusercontent.com/leozhang1/leo_personal_website/master/public/images/Leo_Magic_Kingdom.jpg" alt="Avatar">
-          <p>A picture of me at Disney's Magic Kingdom.</p>
-        </div>
-        <div class="col-5 text-center">
-          <p id="introchild" class="text-wrap">
-            Hello there!
-            My name is Leo Zhang.
-            I am currently seeking a job/internship for
-            anything related to computer programming and
-            problem solving.
-          </p>
-          <button id="resumeButton" class="btn btn-primary rounded-pill" data-mdb-ripple-color="dark" @click="resumeAction">resume</button>
-          &nbsp;
-          <!-- <button id="greetButton" class="btn btn-outline-primary rounded-pill"  data-mdb-ripple-color="dark" @click="sayHiAction">Say Hi!</button> -->
-        </div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-7 text-center">
+        <img id="profilechild" class="w-75 rounded-circle" src="https://raw.githubusercontent.com/leozhang1/leo_personal_website/master/public/images/Leo_Magic_Kingdom.jpg" alt="Avatar">
+        <p>A picture of me at Disney's Magic Kingdom.</p>
+      </div>
+      <div class="col-5 text-center">
+        <p id="introchild" class="text-wrap">
+          Hello there!
+          My name is Leo Zhang.
+          I am currently seeking a job/internship for
+          anything related to computer programming and
+          problem solving.
+        </p>
+        <button id="resumeButton" class="btn btn-primary rounded-pill" data-mdb-ripple-color="dark" @click="resumeAction">resume</button>
+        &nbsp;
+        <!-- <button id="greetButton" class="btn btn-outline-primary rounded-pill"  data-mdb-ripple-color="dark" @click="sayHiAction">Say Hi!</button> -->
       </div>
     </div>
+  </div>
 </template>
 
 
