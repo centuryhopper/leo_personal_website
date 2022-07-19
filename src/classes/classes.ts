@@ -1,21 +1,18 @@
-
-
-
 class BlogCard
 {
     private title: string;
     private date: string;
-    private dateComparator: string
+    public dateComparator: string
     private previewDesc: string;
-    private blogDetailsHTML: string;
+    private routeName: string;
 
-    constructor(title:string, dateComparator:string, date: string, previewDesc:string, blogDetailsHTML:string)
+    constructor(title:string, dateComparator:string, date: string, previewDesc:string, routeName:string)
     {
         this.title = title;
         this.dateComparator = dateComparator
         this.date = date;
         this.previewDesc = previewDesc;
-        this.blogDetailsHTML = blogDetailsHTML;
+        this.routeName = routeName;
     }
 }
 

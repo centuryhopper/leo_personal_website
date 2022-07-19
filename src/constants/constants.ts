@@ -3,7 +3,6 @@ import dayjs from 'dayjs'
 import isLeapYear from 'dayjs/plugin/isLeapYear'
 dayjs.extend(isLeapYear)
 
-
 const languages = [
     'C# - I learned this language when I was learning to use the Unity Game engine to make video games. The language was easy to pick up because it was syntactically similar to Java, which I learned in high school and college.',
     'Python - This has become my favorite programming language. It reads like English and has many sweet syntactic sugars. I use it for leetcode, OpenCV, filehandling, and automating tasks via webscraping.',
@@ -35,23 +34,12 @@ const linuxTools = [
 ]
 
 const blogCards = [
-    new BlogCard('My New Site', dayjs('2022-04-22').format("YYYY-MM-DD"), dayjs('2022-04-22').format('MMMM DD, YYYY'), 'Hello there! Welcome to my website!',
-    /* html */
-    `<div>
-    Hello there! Welcome to my website! Everything you see is created by me from scratch using Vue.js 3! I chose Vuejs over other frameworks for a few reasons:
-        <p>A desire to learn a new frontend framework with a design strucuture to my liking</p>
-        <p>Out of the box TypeScript support</p>
-        <p>I already use Node.Js, so why not learn a frontend framework using the same programming language</p>
-    These are just a few of the reasons why I decided to use Vue.js 3 (hence this first post). I will most likely write mainly about programming and programming-adjacent topics, but I may occasionally dip into other subjects if something catches my attention.
-    </div>`
-    ),
-
+    new BlogCard('My New Site', dayjs('2022-04-22').format("YYYY-MM-DD"), dayjs('2022-04-22').format('MMMM DD, YYYY'), 'Hello there! Welcome to my website!','welcomeBlog'),
 
     // talk about experiences at lake cherokee in orlando fl
-    new BlogCard('Independence Day Fireworks by the Lake', dayjs('2022-07-04').format("YYYY-MM-DD"), dayjs('2022-07-04').format('MMMM DD, YYYY'), 'Fireworks look even better by the lake!',
+    new BlogCard('Independence Day Fireworks by the Lake', dayjs('2022-07-04').format("YYYY-MM-DD"), dayjs('2022-07-04').format('MMMM DD, YYYY'), 'Fireworks look even better by the lake!', 'fireworksBlog'),
 
-    /* html */
-    `<div>fireworks!</div>`),
+    new BlogCard('My Linux-distro hopping journey and my choice of Linux distro', dayjs('2022-06-25').format("YYYY-MM-DD"), dayjs('2022-06-25').format('MMMM DD, YYYY'), 'Distro hopping was a time-consuming but rewarding experience!','linuxDistroTalk'),
 ]
 
 

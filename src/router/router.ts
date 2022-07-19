@@ -1,10 +1,13 @@
 import AboutMe from '../views/AboutMe.vue'
-import BlogDetails from '../views/BlogDetails.vue'
 import ContactMe from '../views/ContactMe.vue'
 import Home from '../views/home.vue'
 import Blog from '../views/MyBlog.vue'
 import Games from '../views/MyGames.vue'
 import Skills from '../views/MySkills.vue'
+import Welcome from '../components/Welcome.vue'
+import Fireworks from '../components/Fireworks.vue'
+import LinuxDistro from '../components/LinuxDistro.vue'
+
 
 import { createRouter, createWebHashHistory } from "vue-router"
 import PageNotFound from '../views/PageNotFound.vue'
@@ -19,12 +22,34 @@ const routes = [
     { path: '/skills', name: 'skills', component: Skills, },
     { path: '/games', name: 'games', component: Games, },
     { path: '/contactMe', name: 'contactMe', component: ContactMe, },
-    { path: '/blog', name: 'blog', component: Blog, },
     {
-      path: '/blogDetails',
-      name: 'blogDetails',
+      path: '/blogs',
+      name: 'blogs',
+      component: Blog,
+    },
+    {
+      path: '/welcomeBlog',
+      name: 'welcomeBlog',
       components: {
-        default: BlogDetails,
+        default: Welcome,
+      },
+      // allow props for blog details
+      props: true,
+    },
+    {
+      path: '/linuxDistroTalk',
+      name: 'linuxDistroTalk',
+      components: {
+        default: LinuxDistro,
+      },
+      // allow props for blog details
+      props: true,
+    },
+    {
+      path: '/fireworksBlog',
+      name: 'fireworksBlog',
+      components: {
+        default: Fireworks,
       },
       // allow props for blog details
       props: true,

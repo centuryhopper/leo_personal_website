@@ -8,7 +8,7 @@
         <router-link to="/skills">Skills</router-link>
         <router-link to="/games">Games</router-link>
         <router-link to="/contactMe">Contact Me</router-link>
-        <router-link to="/blog">Blog</router-link>
+        <router-link to="/blogs">Blog</router-link>
         </nav>
     </div>
 </template>
