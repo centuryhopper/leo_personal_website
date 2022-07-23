@@ -44,7 +44,7 @@
 
 <script lang="ts">
 import { defineComponent,ref } from 'vue'
-import axios from 'axios'
+import axios, { AxiosError } from 'axios'
 
 let didSubmit = false, alreadyShowingTimeout = false
 const TIME_IN_SECONDS = 10
@@ -75,8 +75,9 @@ export default defineComponent({
                 let res = null
                 try {
                     res = await axios.post(process.env.VUE_APP_LIVE_ENDPOINT, this.postData)
-                } catch (error: any) {
-                    console.error(error.message)
+                } catch (error) {
+                    const err = error as AxiosError
+                    console.error(err.message)
                 }
                 console.log(res?.data)
             }

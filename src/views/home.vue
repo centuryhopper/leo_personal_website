@@ -23,7 +23,7 @@
 
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
+import { defineComponent, } from 'vue'
 import '../assets/intro.css'
 import '../assets/footer.css'
 
