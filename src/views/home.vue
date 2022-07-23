@@ -1,11 +1,11 @@
 <template>
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-7 text-center">
+      <div class="col-lg-7 col-sm-12 text-center">
         <img id="profilechild" class="w-75 rounded-circle" src="https://raw.githubusercontent.com/leozhang1/leo_personal_website/master/public/images/Leo_Magic_Kingdom.jpg" alt="Avatar">
         <p>A picture of me at Disney's Magic Kingdom.</p>
       </div>
-      <div class="col-5 text-center">
+      <div class="col-lg-5 col-sm-12 text-center">
         <p id="introchild" class="text-wrap">
           Hello there!
           My name is Leo Zhang.

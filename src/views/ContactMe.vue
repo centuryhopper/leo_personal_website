@@ -29,21 +29,49 @@
         </div>
     </form>
 
+
+
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
-        <div :class="toastHandler">
+        <div class="toast fade show" role="alert" v-show="showSuccessToast">
+            <div class="toast-header">
+                <strong class="me-auto"><i class="bi-globe"></i>SUCCESS</strong>
+                <small>just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                <p>Thank you! Your message has been sent!</p>
+            </div>
+        </div>
+
+        <div class="toast fade show" role="alert" v-show="showErrorToast">
             <div class="toast-header">
                 <strong class="me-auto">ERROR</strong>
+                <small>just now</small>
                 <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
             </div>
             <div class="toast-body">
                 <p>You already submitted. Please wait a moment before trying again.</p>
             </div>
         </div>
+
+        <div class="toast fade show" role="alert" v-show="showFailToPostToast">
+            <div class="toast-header">
+                <strong class="me-auto">FAILURE</strong>
+                <small>just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                <p>Your message could not be sent. Please try again later :/</p>
+            </div>
+        </div>
     </div>
+
+
+
 </template>
 
 <script lang="ts">
-import { defineComponent,ref } from 'vue'
+import { computed, defineComponent,ref } from 'vue'
 import axios, { AxiosError } from 'axios'
 
 let didSubmit = false, alreadyShowingTimeout = false
@@ -60,10 +88,25 @@ export default defineComponent({
             message: '',
         })
 
-        const toastHandler = ref('toast hide')
 
-        return { postData, toastHandler, }
+        const shouldShowErrorToast = ref(false)
+        const showErrorToast = computed(() => {
+            return shouldShowErrorToast.value
+        })
+
+        const shouldShowSuccessToast = ref(false)
+        const showSuccessToast = computed(() => {
+            return shouldShowSuccessToast.value
+        })
+
+        const shouldShowFailToPostToast = ref(false)
+        const showFailToPostToast = computed(() => {
+            return shouldShowFailToPostToast.value
+        })
+
+        return { postData, shouldShowErrorToast, showErrorToast, shouldShowSuccessToast, showSuccessToast, shouldShowFailToPostToast, showFailToPostToast,}
     },
+
     methods:
     {
         async post(event: Event) : Promise<void>
@@ -75,13 +118,26 @@ export default defineComponent({
                 let res = null
                 try {
                     res = await axios.post(process.env.VUE_APP_LIVE_ENDPOINT, this.postData)
+                    this.shouldShowSuccessToast = true
+                    console.log(res?.data)
+                    setTimeout(
+                        () => {
+                            // close toast
+                            this.shouldShowSuccessToast = false
+                        }, TIME_IN_SECONDS * 1000
+                    )
                 } catch (error) {
                     const err = error as AxiosError
+                    this.shouldShowFailToPostToast = true
                     console.error(err.message)
+                    setTimeout(
+                        () => {
+                            // close toast
+                            this.shouldShowFailToPostToast = false
+                        }, TIME_IN_SECONDS * 1000
+                    )
                 }
-                console.log(res?.data)
             }
-
         },
 
         canPost() : boolean
@@ -89,7 +145,7 @@ export default defineComponent({
             if (didSubmit)
             {
                 // show toast
-                this.toastHandler = 'toast show'
+                this.shouldShowErrorToast = true
 
                 // don't restart timer if already started
                 if (alreadyShowingTimeout)
@@ -104,7 +160,7 @@ export default defineComponent({
                         // allow submitting again
                         alreadyShowingTimeout = false
                         didSubmit = false
-                        this.toastHandler = 'toast hide'
+                        this.shouldShowErrorToast = false
                 }, TIME_IN_SECONDS * 1000)
 
                 return false

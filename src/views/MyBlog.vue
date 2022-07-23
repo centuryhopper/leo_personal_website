@@ -10,7 +10,7 @@
         <div class="card-body">
             <router-link
             class="card-link"
-            :to="{ name: b.routeName, params: {title: b.title,} }"
+            :to="{ name: b.routeName, }"
             >
                 {{b.title}}
             </router-link>
@@ -28,8 +28,8 @@ export default defineComponent({
     name:'blog-component',
     setup() {
         // make sure the list is sorted by oldest by default
-        blogCards.sort((a,b) => a.dateComparator > b.dateComparator ? 1 : -1)
-        const bc = ref(blogCards)
+        const tmp = [...blogCards].sort((a,b) => a.dateComparator > b.dateComparator ? 1 : -1)
+        const bc = ref(tmp)
         const isNewest = ref(false)
         return { bc, isNewest, }
     },

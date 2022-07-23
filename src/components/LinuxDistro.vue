@@ -1,6 +1,6 @@
 <template>
     <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
-        <h2>{{title}}</h2>
+        <h2>My Linux-distro Hopping Journey And My Choice of Linux Distro</h2>
         <hr/>
         <div class="texts">
             Distro hopping was a time-consuming but rewarding experience! The first linux distro I have ever used was linux mint during my Fall 2018 computer science I course because we needed a unix command line interface to run our coding assignments and I refuse to use a virtual machine on my windows laptop. Later on I switched to Ubuntu since linux was based off of it and I wanted to give it a try. Later on I felt overwhelmed with simultaneously learning Linux and being in school full time, so I took a break from it and bought a Macbook to keep using a Unix command line.

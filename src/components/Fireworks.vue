@@ -1,6 +1,6 @@
 <template>
     <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
-      <h2>{{title}}</h2>
+      <h2>Independence Day Fireworks By the Lake</h2>
       <hr/>
       <div class="texts">
           Fireworks look even better by the lake! I wanted to go see the fireworks at Lake Eola which is in downtown Orlando. However, little did I know until I got there they were so packed around the evenings that I ended up settling at a different lake (Lake Cherokee) and the experience was just as good!

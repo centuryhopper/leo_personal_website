@@ -37,9 +37,9 @@ const blogCards = [
     new BlogCard('My New Site', dayjs('2022-04-22').format("YYYY-MM-DD"), dayjs('2022-04-22').format('MMMM DD, YYYY'), 'Hello there! Welcome to my website!','welcomeBlog'),
 
     // talk about experiences at lake cherokee in orlando fl
-    new BlogCard('Independence Day Fireworks by the Lake', dayjs('2022-07-04').format("YYYY-MM-DD"), dayjs('2022-07-04').format('MMMM DD, YYYY'), 'Fireworks look even better by the lake!', 'fireworksBlog'),
+    new BlogCard('Independence Day Fireworks By the Lake', dayjs('2022-07-04').format("YYYY-MM-DD"), dayjs('2022-07-04').format('MMMM DD, YYYY'), 'Fireworks look even better by the lake!', 'fireworksBlog'),
 
-    new BlogCard('My Linux-distro hopping journey and my choice of Linux distro', dayjs('2022-06-25').format("YYYY-MM-DD"), dayjs('2022-06-25').format('MMMM DD, YYYY'), 'Distro hopping was a time-consuming but rewarding experience!','linuxDistroTalk'),
+    new BlogCard('My Linux-distro Hopping Journey And My Choice of Linux Distro', dayjs('2022-06-25').format("YYYY-MM-DD"), dayjs('2022-06-25').format('MMMM DD, YYYY'), 'Distro hopping was a time-consuming but rewarding experience!','linuxDistroTalk'),
 ]
 
 

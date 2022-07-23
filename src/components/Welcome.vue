@@ -1,6 +1,6 @@
 <template>
     <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
-        <h2>{{title}}</h2>
+        <h2>My New Site</h2>
         <hr/>
         <div class="texts">
             Hello there! Welcome to my website! Everything you see is created by me from scratch using Vue.js 3! My previous website was made in flutter-web but I wanted to use HTML,CSS, and JavaScript since those tools were more in demand in the job market. I chose Vue.js 3 over other frameworks for a few reasons:
