@@ -2,8 +2,8 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-7 col-sm-12 text-center">
-        <img id="profilechild" class="w-75 rounded-circle" src="https://raw.githubusercontent.com/leozhang1/leo_personal_website/master/public/images/Leo_Magic_Kingdom.jpg" alt="Avatar">
-        <p>A picture of me at Disney's Magic Kingdom.</p>
+        <img id="profilechild" class="w-75 rounded-circle" src="https://raw.githubusercontent.com/leozhang1/leo_personal_website/main_laptop/src/photos/IMG_9713.jpeg" alt="Avatar">
+        <p>Great Falls Park in Maryland.</p>
       </div>
       <div class="col-lg-5 col-sm-12 text-center">
         <p id="introchild" class="text-wrap">
