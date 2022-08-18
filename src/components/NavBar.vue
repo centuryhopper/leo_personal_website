@@ -6,7 +6,7 @@
         <router-link to="/">Home</router-link>
         <router-link to="/aboutMe">About Me</router-link>
         <router-link to="/skills">Skills</router-link>
-        <router-link to="/games">Games</router-link>
+        <router-link to="/games">Projects</router-link>
         <router-link to="/contactMe">Contact Me</router-link>
         <router-link to="/blogs">Blog</router-link>
         </nav>
