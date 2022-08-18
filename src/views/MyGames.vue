@@ -2,8 +2,8 @@
     <!-- <div class="text-center">
         <p>Content coming soon!</p>
     </div> -->
-    <!-- <div class="row">
-        <div class="col-sm-6">
+    <div class="row">
+        <!-- <div class="col-sm-6">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Special title treatment</h5>
@@ -21,16 +21,32 @@
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
+        </div> -->
+        <div class="col-sm-6">
+            <div class="card">
+                <img class="card-img-top" src="https://raw.githubusercontent.com/leozhang1/leo_personal_website/main_laptop/src/photos/pong.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Pong Game</h5>
+                    <p class="card-text">This is Classic game of pong. The ball will move faster with each bounce to make things more interesting.
+                    <br/>
+                    Player 1 controls: W and S
+                    <br/>
+                    Player 2 controls: up and down arrows
+                    I hope you enjoy.</p>
+                </div>
+            </div>
         </div>
-    </div> -->
-    <div class="card mb-3">
-        <img class="card-img-top" src="" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+        <div class="col-sm-6">
+            <div class="card">
+                <img class="card-img-top" src="https://raw.githubusercontent.com/leozhang1/leo_personal_website/main_laptop/src/photos/tic_tac_toe.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Tic Tac Toe</h5>
+                    <p class="card-text">Tic Tac Toe with apples and oranges!</p>
+                </div>
+            </div>
         </div>
-</div>
+    </div>
 
 </template>
 
