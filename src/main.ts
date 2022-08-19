@@ -7,7 +7,11 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import {createPinia} from 'pinia'
 import piniaPersist from 'pinia-plugin-persist'
+import {library} from '@fortawesome/fontawesome-svg-core'
+import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
 
+library.add(faMagnifyingGlass)
 
 const pinia = createPinia()
 pinia.use(piniaPersist)
@@ -16,6 +20,7 @@ createApp(App)
 .use(router)
 .use(pinia)
 .use(VueAxios, axios)
+.component('fa', FontAwesomeIcon)
 .mount('#app')
 
 
@@ -91,4 +96,6 @@ https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-pa
 https://getbootstrap.com/docs/5.0/utilities/text/#text-wrapping-and-overflow
 
 https://codepen.io/rasaf-ibrahim/pen/gOmzPZe
+
+https://www.thisdot.co/blog/vue-3-2-using-composition-api-with-script-setup
 */
