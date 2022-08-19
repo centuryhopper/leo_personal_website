@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+    <div class="d-flex flex-column min-vh-100 justify-con/tent-center align-items-center">
       <h2>Independence Day Fireworks By the Lake</h2>
       <hr/>
       <div class="texts">

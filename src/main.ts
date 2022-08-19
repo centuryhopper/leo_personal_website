@@ -98,4 +98,7 @@ https://getbootstrap.com/docs/5.0/utilities/text/#text-wrapping-and-overflow
 https://codepen.io/rasaf-ibrahim/pen/gOmzPZe
 
 https://www.thisdot.co/blog/vue-3-2-using-composition-api-with-script-setup
+
+
+https://www.youtube.com/watch?v=NHedjr9BJLk
 */
