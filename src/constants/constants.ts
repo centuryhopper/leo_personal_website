@@ -20,11 +20,11 @@ const techs = [
 ]
 
 const pythonLibraries = [
-    'OpenCV and DJI-TelloPy',
-    'Python-Selenium & Python-Beautiful Soup - I used these libraries for all my webscraping projects. They are very powerful tools when you learn to use them properly and can help you quickly collect the data you need for testing out machine learning models',
-    'Python-Pandas & Python Numpy',
-    'Python-ScikitLearn',
-    'Python-prophet'
+    'OpenCV & DJI-TelloPy - I always found robots fascinating and I loved controlling robots in first person shooter games back when I was a kid. Now that I have been coding for years, I wanted to experience what it was like to control robots in real life via programming, so I bought a Tello drone on Amazon and decided to build some projects with it.',
+    'Python-Selenium & Python-Beautiful Soup - I used these libraries for all my webscraping projects. They are very powerful tools when you learn to use them properly and can help you quickly collect the data you need for testing out machine learning models.',
+    'Python-Pandas, Numpy, and Matplotlib - These were powerful libraries I used for data manipulation and collection for different data applications I may have.',
+    'Python-ScikitLearn - This was the main library we used for importing different machine learning models from simple decision trees to complex state of the art models such as xgboost.',
+    'Python-prophet - I use this model to make predictions about the future based on the current data collected.'
 ]
 
 const linuxTools = [

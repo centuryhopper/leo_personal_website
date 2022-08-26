@@ -64,4 +64,6 @@ Remove a config var, type:
 deploy to heroku:
 ```git push heroku master```
 
+after the first deployment, each subsequent deployment may still show the web page as if it were still deployed for the first time. In that case, you should try disabling cache in the network section of the web inspector
+
 
