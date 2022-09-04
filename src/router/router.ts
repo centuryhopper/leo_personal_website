@@ -7,6 +7,7 @@ import Skills from '../views/MySkills.vue'
 import Welcome from '../components/Welcome.vue'
 import Fireworks from '../components/Fireworks.vue'
 import LinuxDistro from '../components/LinuxDistro.vue'
+import LastSemester from '../components/LastSemester.vue'
 
 
 import { createRouter, createWebHashHistory } from "vue-router"
@@ -42,7 +43,7 @@ const routes = [
       components: {
         default: LinuxDistro,
       },
-      // allow props for blog details
+      // allow props
       props: true,
     },
     {
@@ -51,7 +52,16 @@ const routes = [
       components: {
         default: Fireworks,
       },
-      // allow props for blog details
+      // allow props
+      props: true,
+    },
+    {
+      path: '/finalSemester',
+      name: 'finalSemester',
+      components: {
+        default: LastSemester,
+      },
+      // allow props
       props: true,
     },
     {

@@ -29,7 +29,7 @@ export default defineComponent({
     props: {
         title: {type: String, required: true, default: "Greetings!"},
     },
-    name:'welcome-to-my-website-card-details',
+    name:'linux-distro-details',
 })
 </script>
 

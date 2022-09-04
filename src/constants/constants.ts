@@ -40,6 +40,8 @@ const blogCards = [
     new BlogCard('Independence Day Fireworks By the Lake', dayjs('2022-07-04').format("YYYY-MM-DD"), dayjs('2022-07-04').format('MMMM DD, YYYY'), 'Fireworks look even better by the lake!', 'fireworksBlog'),
 
     new BlogCard('My Linux-distro Hopping Journey And My Choice of Linux Distro', dayjs('2022-06-25').format("YYYY-MM-DD"), dayjs('2022-06-25').format('MMMM DD, YYYY'), 'Distro hopping was a time-consuming but rewarding experience!','linuxDistroTalk'),
+
+    new BlogCard('Last Semester of Grad School', dayjs('2022-06-25').format("YYYY-MM-DD"), dayjs('2022-08-26').format('MMMM DD, YYYY'), 'My final semester of graduate school has begun!','finalSemester'),
 ]
 
 
